@@ -1,0 +1,54 @@
+body{
+    background-image: url("https://img.freepik.com/free-photo/handrawn-barbecue-elements_125540-588.jpg?w=1800&t=st=1707412700~exp=1707413300~hmac=7e7e058edf94e9f3e4beb2e4cb83a6873c2dca7fa25a947b679f6e1e9e81c17f");
+    /* background-image: url("https://img.freepik.com/premium-photo/concept-aromatherapy-with-mint-space-text_185193-86465.jpg");
+} */
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(0, 13, 255);
+    
+}
+h2{
+    color: rgb(0, 13, 255);
+}
+
+table, th, td {
+    border: 1px solid;
+  }
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-style: dotted;
+    
+    width: 100%;
+    margin-bottom: 20px;
+    background-color:gray;
+    text-align: center;
+}
+th {
+    color: yellow;
+    
+}
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+  
+  label {
+    padding: 12px 12px 12px 0;
+   
+  }
+  .container {
+    width: 35%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
