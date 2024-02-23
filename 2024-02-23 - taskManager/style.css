@@ -1,0 +1,132 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    
+    background-image: url("assets/tile.jpg");
+}
+
+.title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.form-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+    text-align: center;
+    background-image: url('assets/formbg.jpg'); /* set the background image */
+    background-size: auto; /* cover the entire container */
+    background-position: center; /* center the background image */
+}
+
+.form {
+    color: black;
+    font-size: larger;
+    padding: 20px; 
+}
+
+.btn-primary {
+    margin-top: 20px; /* add space above the button */
+    
+}
+
+.parentNotes{    
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+
+.notes {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+}
+
+.notes img {
+    width: 100%; 
+    height: auto; 
+}
+
+.notes .text {
+    position: absolute;
+    top: 50%;  /* center vertically, adjust to place the top edge of the text container at the center */ 
+    left: 45%; /* center horizontally */
+    transform: translate(-50%, -50%); /* adjust the position  */
+    color: #000000; 
+    font-family: sans-serif;
+    max-height: 150px; /* sets maximum chars before using a scroller */
+    overflow-y: auto;
+    width: 80%; /* leaves space for the scroll bar */
+    text-align: left;
+    padding: 5px;
+    box-sizing: border-box; /* so padding doesn't add up to total width*/
+    
+}
+
+.notes .btn-close {
+    display: none; /* hide the close button by default */
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    transform: translate(-20px, 20px); /* move the button left and down */
+}
+.notes:hover .btn-close {
+    display: block; /* show the close button on note hover */
+}
+
+.btn-btn-secondary{
+    position: relative;
+}
+
+
+.notes {
+    animation-name: animation;
+    animation-duration: 3s;
+    /* animation-iteration-count: 3; */
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: ease-in;
+    /* animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out; */
+    /* animation-delay: 2s; */
+    /* animation-fill-mode: a */
+    animation-direction: alternate-reverse;
+    /* animation-direction: alternate; */
+}
+
+@keyframes animation {
+    from {
+        
+        opacity: 100;
+    }
+
+    to {
+        opacity: 0;
+        
+    }
+}
+
+.notes .note-date, .notes .note-time {
+    position: absolute;
+    left: 5px; // Align to the left
+    color: #000; // Text color
+    font-family: sans-serif;
+    font-size: 12px; // Adjust font size as needed
+    background-color: rgba(255, 255, 255, 0.7); // Slight background for readability
+    padding: 2px; // Padding around the text
+    border-radius: 5px; // Rounds the corners of the background
+}
+
+.notes .note-date {
+    bottom: 25px; // Position the date above the time
+}
+
+.notes .note-time {
+    bottom: 5px; // Position the time at the very bottom
+}

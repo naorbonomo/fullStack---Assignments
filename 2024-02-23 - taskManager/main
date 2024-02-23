@@ -1,0 +1,7 @@
+
+function clicky(){
+    let i = document.getElementById("noteName").value
+    localStorage.setItem(i)
+    
+    console.log(i);
+}
